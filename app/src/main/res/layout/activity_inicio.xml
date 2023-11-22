@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:gravity="center"
+    tools:context=".Inicio">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            app:srcCompat="@mipmap/logo_tec_white_foreground" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+
+            android:gravity="center"
+            android:text="Bienvenido/a a la app"
+            android:textSize="20dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/buttonCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginBottom="23dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="18dp"
+
+                android:background="@color/main_gray"
+                android:text="Cerrar sesion"
+            />
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/buttonCrear"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Crear" />
+        <Button
+            android:id="@+id/buttonReporte"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Reporte" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleViewProductos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    </LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registrar"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:layout_marginBottom="50dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+
+            <TextView
+                android:id="@+id/textViewUsuario"
+                android:layout_width="101dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="Usuario:"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFieldUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="20dp"
+                    android:hint="Ingresar usuario" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            >
+            <TextView
+                android:id="@+id/textViewContra"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:text="Contraseña:" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textFieldContra"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="20dp"
+                    android:hint="Ingresar contraseña" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/buttonLoginUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="Login" />
+        <Button
+            android:id="@+id/buttonVolver2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:text="Volver" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
